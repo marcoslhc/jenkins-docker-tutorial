@@ -45,6 +45,11 @@ logs:
 shell:
 	@$(CMD) exec -it $(container) bash
 
+# TARGET:stop					Stops the container
+.PHONY: stop
+stop:
+	@$(CMD) stop $(container)
+
 
 # TARGET:help					This help
 help:
